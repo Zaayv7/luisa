@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luisa's Beauty Salon | Belleza Profesional</title>
+    <link rel="icon" href="imagenes/icono.jpg" type="image/jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menú -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Luisa's Beauty</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#manual" data-bs-toggle="modal" data-bs-target="#manualModal">Manual de Usuario</a>
+                    </li>
+                </ul>
+                <a href="https://link.agendapro.com/pa/salondebellezadeluisataborda/c6fb25a6" target="_blank" class="btn btn-primary ms-3" style="background-color: var(--primary-color); border: none;">
+                    <i class="fas fa-calendar-alt me-2"></i>Reservar
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Página Principal -->
+    <section id="home" class="main-section">
+        <div class="title">
+            <span class="line">Luisa's</span>
+            <span class="line">Beauty</span>
+            <span class="line">Studio</span>
+            <a href="https://link.agendapro.com/pa/salondebellezadeluisataborda/c6fb25a6" target="_blank" class="cta-button">
+                Agenda tu cita aquí →
+            </a>
+        </div>
+
+        <div class="image-section">
+            <div class="image-container">
+                <div class="background-shape"></div>
+                <img src="imagen.png" alt="Luisa's Beauty Studio">
+            </div>
+        </div>
+    </section>
+<!-- Servicios -->
+<section id="services" class="py-5 bg-light">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h2 class="fs-1">Nuestros Servicios</h2>
+            <p class="text-muted">Descubre nuestros tratamientos exclusivos</p>
+        </div>
+        
+        <ul class="nav nav-pills justify-content-center mb-4" id="servicesTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="spa-tab" data-bs-toggle="pill" data-bs-target="#spa" type="button" role="tab">Spa</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="eyelashes-tab" data-bs-toggle="pill" data-bs-target="#eyelashes" type="button" role="tab">Pestañas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="makeup-tab" data-bs-toggle="pill" data-bs-target="#makeup" type="button" role="tab">Maquillaje</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="waxing-tab" data-bs-toggle="pill" data-bs-target="#waxing" type="button" role="tab">Depilación</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="hair-tab" data-bs-toggle="pill" data-bs-target="#hair" type="button" role="tab">Cabello</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="nails-tab" data-bs-toggle="pill" data-bs-target="#nails" type="button" role="tab">Uñas</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="servicesTabContent">
+            <!-- Spa -->
+            <div class="tab-pane fade show active" id="spa" role="tabpanel" aria-labelledby="spa-tab">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="service-card">
+                            <img src="https://korumasajes.com/wp-content/uploads/2024/08/15846.jpg" class="card-img-top" alt="Limpieza Facial">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-spa"></i>
+                                </div>
+                                <h4 class="fw-bold">Limpieza Facial</h4>
+                                <div class="price-tag">$25</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>1 hora</p>
+                                <p>Tratamiento profundo para limpiar, exfoliar y nutrir tu piel, dejándola fresca y radiante.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="service-card">
+                            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Masaje Relajante">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-massage"></i>
+                                </div>
+                                <h4 class="fw-bold">Masaje Relajante</h4>
+                                <div class="price-tag">$25</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>30 minutos</p>
+                                <p>Terapia manual que alivia tensiones musculares y promueve la relajación profunda.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pestañas -->
+            <div class="tab-pane fade" id="eyelashes" role="tabpanel" aria-labelledby="eyelashes-tab">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service-card">
+                            <img src="https://bydianatrejo.com/wp-content/uploads/2024/02/image_123650291-4.jpg" class="card-img-top" alt="Pestañas Volumen Tecnológico">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <h4 class="fw-bold">Pestañas Volumen Tecnológico</h4>
+                                <div class="price-tag">$30</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>2 horas</p>
+                                <p>Técnica avanzada que proporciona mayor volumen y definición a tus pestañas naturales.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service-card">
+                            <img src="https://serenitystudio.co/wp-content/uploads/2024/12/extensiones-punto-por-punto-1024x724.jpg" class="card-img-top" alt="Pestañas Punto a Punto">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <h4 class="fw-bold">Pestañas Punto a Punto</h4>
+                                <div class="price-tag">$8</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>15 minutos</p>
+                                <p>Técnica precisa que coloca extensiones individuales para un look natural y definido.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service-card">
+                            <img src="https://www.mycutelash.com/images/clasicas.jpeg" class="card-img-top" alt="Extensiones Clásicas">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <h4 class="fw-bold">Extensiones Clásicas</h4>
+                                <div class="price-tag">$25</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>2 horas</p>
+                                <p>Extensiones individuales que aumentan el largo y espesor de tus pestañas naturales.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service-card">
+                            <img src="https://z-uñas.com/wp-content/uploads/2024/07/ventaja_lifting_pestanas.jpg" class="card-img-top" alt="Lifting de Pestañas">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <h4 class="fw-bold">Lifting de Pestañas</h4>
+                                <div class="price-tag">$20</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>1 hora</p>
+                                <p>Tratamiento que levanta y curva tus pestañas naturales para un efecto de mayor longitud.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mquillaje -->
+            <div class="tab-pane fade" id="makeup" role="tabpanel" aria-labelledby="makeup-tab">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="service-card">
+                            <img src="https://tumakeup.tv/wp-content/uploads/2021/01/da1.png" class="card-img-top" alt="Maquillaje Profesional">
+                            <div class="card-body text-center">
+                                <div class="service-icon">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+                                <h4 class="fw-bold">Maquillaje Profesional</h4>
+                                <div class="price-tag">$25</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>1 hora 30 minutos</p>
+                                <p>Maquillaje profesional adaptado a tus necesidades, ya sea para un evento especial o para el día a día.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Depilación -->
+            <div class="tab-pane fade" id="waxing" role="tabpanel" aria-labelledby="waxing-tab">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service-card">
+                            <img src="https://aprende.com/wp-content/uploads/2022/02/axilas-cera-depilacion-con-cera.png" class="card-img-top" alt="Depilación Axilas">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-feather-alt"></i>
+                                </div>
+                                <h4 class="fw-bold">Depilación Axilas</h4>
+                                <div class="price-tag">$7</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>10 minutos</p>
+                                <p>Depilación precisa en la zona de las axilas para una piel suave y sin vellos.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service-card">
+                            <img src="https://www.druni.es/blog/wp-content/uploads/2024/07/Depilacion-brasilena-PORTADA-240724_02.jpg" class="card-img-top" alt="Depilación Brasilero">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-feather-alt"></i>
+                                </div>
+                                <h4 class="fw-bold">Depilación Brasilero</h4>
+                                <div class="price-tag">$20</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>40 minutos</p>
+                                <p>Depilación completa en la zona íntima para un resultado suave y duradero.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service-card">
+                            <img src="https://okdiario.com/img/2022/04/24/depilacion-de-brazos-beneficios-y-efectos-secundarios.jpg" class="card-img-top" alt="Depilación Brazos">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-feather-alt"></i>
+                                </div>
+                                <h4 class="fw-bold">Depilación Brazos</h4>
+                                <div class="price-tag">$10</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>20 minutos</p>
+                                <p>Depilación completa de ambos brazos para una piel suave y sin vellos.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="service-card">
+                            <img src="https://megusta.do/storage/32000/21951/2c3feb6fca4145d29b2e3cac7e36a73f.jpg" class="card-img-top" alt="Línea Bikini">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-feather-alt"></i>
+                                </div>
+                                <h4 class="fw-bold">Línea Bikini</h4>
+                                <div class="price-tag">$15</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>20 minutos</p>
+                                <p>Depilación en la zona del bikini para un resultado limpio y definido.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Cabello -->
+            <div class="tab-pane fade" id="hair" role="tabpanel" aria-labelledby="hair-tab">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <img src="https://img77.uenicdn.com/image/upload/v1523876959/service_images/adobestock_76422324.jpg" class="card-img-top" alt="Blower y Plancha">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-cut"></i>
+                                </div>
+                                <h4 class="fw-bold">Blower y Plancha</h4>
+                                <div class="price-tag">$9</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>1 hora</p>
+                                <p>Peinado profesional con secado y planchado para un look liso y brillante.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <img src="https://image.tuasaude.com/media/article/ba/da/como-fazer-botox-capilar-em-casa_19661.jpg" class="card-img-top" alt="Botox Capilar">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-cut"></i>
+                                </div>
+                                <h4 class="fw-bold">Botox Capilar</h4>
+                                <div class="price-tag">$25</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>2 horas</p>
+                                <p>Tratamiento reconstructivo que devuelve la salud, brillo y suavidad al cabello.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <img src="https://www.ospasalon.com.mx/cdn/shop/files/StrengthenYourHair.jpg?v=1687917446" class="card-img-top" alt="Corte de Cabello">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-cut"></i>
+                                </div>
+                                <h4 class="fw-bold">Corte de Cabello</h4>
+                                <div class="price-tag">$5</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>30 minutos</p>
+                                <p>Corte profesional personalizado según tu estilo y tipo de cabello.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <img src="https://www.imahersalon.com/resultado-de-los-tratamientos-de-hidratacion-para-el-cabello_img62203t1.jpg" class="card-img-top" alt="Hidratación Capilar">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-cut"></i>
+                                </div>
+                                <h4 class="fw-bold">Hidratación Capilar</h4>
+                                <div class="price-tag">$15</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>1 hora 30 minutos</p>
+                                <p>Tratamiento intensivo que nutre y restaura la humedad natural del cabello.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <img src="https://vanitasespai.es/wp-content/uploads/2021/06/queratina-organica.jpg" class="card-img-top" alt="Keratina Orgánica">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-cut"></i>
+                                </div>
+                                <h4 class="fw-bold">Keratina Orgánica</h4>
+                                <div class="price-tag">$45</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>4 horas</p>
+                                <p>Tratamiento que alisa y reconstruye el cabello con ingredientes naturales.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <img src="https://cdn0.uncomo.com/es/posts/7/2/5/alisado_de_acido_hialuronico_que_es_cuanto_dura_y_diferencias_con_la_keratina_54527_orig.jpg" class="card-img-top" alt="Keratina Ybera">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-cut"></i>
+                                </div>
+                                <h4 class="fw-bold">Keratina Ybera</h4>
+                                <div class="price-tag">$80</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>4 horas</p>
+                                <p>Tratamiento premium que elimina el frizz y proporciona un alisado duradero.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Uñas -->
+            <div class="tab-pane fade" id="nails" role="tabpanel" aria-labelledby="nails-tab">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <img src="https://i.pinimg.com/736x/9a/98/be/9a98bede49e9ba00ba40a6a4174bd498.jpg" class="card-img-top" alt="Poligel con extensión">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-hand-sparkles"></i>
+                                </div>
+                                <h4 class="fw-bold">Poligel con extensión</h4>
+                                <div class="price-tag">$25</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>2 horas 30 minutos</p>
+                                <p>Técnica avanzada que combina lo mejor del acrílico y el gel para un resultado duradero y natural con extensión.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <img src="https://i.pinimg.com/736x/77/6a/fc/776afc453973ffa8fd905984471611fb.jpg" class="card-img-top" alt="Polygel Uña Natural">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-hand-sparkles"></i>
+                                </div>
+                                <h4 class="fw-bold">Polygel Uña Natural</h4>
+                                <div class="price-tag">$22</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>2 horas 10 minutos</p>
+                                <p>Sistema revolucionario que fortalece y protege tus uñas naturales con un acabado perfecto y duradero.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <img src="https://i.pinimg.com/736x/f4/93/1c/f4931c652643eb76ef120b3111d4823b.jpg" class="card-img-top" alt="Base Rubber">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-hand-sparkles"></i>
+                                </div>
+                                <h4 class="fw-bold">Base Rubber</h4>
+                                <div class="price-tag">$18</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>1 hora 50 minutos</p>
+                                <p>Base flexible y resistente que protege tus uñas naturales con un acabado brillante y natural.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <img src="https://i.pinimg.com/736x/da/81/c0/da81c0de6e9bb3a59881c8e4f53bb575.jpg" class="card-img-top" alt="Base Rubber con extensión">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-hand-sparkles"></i>
+                                </div>
+                                <h4 class="fw-bold">Base Rubber con extensión</h4>
+                                <div class="price-tag">$20</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>2 horas</p>
+                                <p>Combinación perfecta entre durabilidad y flexibilidad con extensión para mayor longitud.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card">
+                            <img src="https://i.pinimg.com/736x/6a/bc/e3/6abce3a41ff6ea83e207671faa9ec915.jpg" class="card-img-top" alt="Pedicure y Manicure regular">
+                            <div class="card-body">
+                                <div class="service-icon">
+                                    <i class="fas fa-hand-sparkles"></i>
+                                </div>
+                                <h4 class="fw-bold">Pedicure y Manicure regular</h4>
+                                <div class="price-tag">$9</div>
+                                <p class="service-time"><i class="far fa-clock me-2"></i>35 minutos</p>
+                                <p>Tratamiento básico para mantener tus uñas de manos y pies limpias, cuidadas y bonitas.</p>
+                                <button class="btn btn-primary ms-3 py-2 px-4" style="background-color: var(--primary-color); border: none" data-bs-toggle="modal" data-bs-target="#bookingModal">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About her-->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 class = "fs-1">Sobre Mí</h2>
+                <p class="text-muted">Conoce mi pasión por la belleza</p>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="position-relative">
+                        <img src="imagen.png" alt="Luisa's Beauty Studio" 
+     class="rounded shadow-lg" style="width: 450px; height: auto;">
+                        <div class="position-absolute top-0 start-0 text-white p-3 rounded" style="transform: translate(-20%, -20%); background-color: #39500C;">
+                            <h3 class="mb-0 text-white fw-bold">10+</h3>
+                            <p class="mb-0">Años de experiencia</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3 class="mb-4 fw-bold">Luisa Taborda</h3>
+                    <p>Hola, soy Luisa, la fundadora y profesional detrás de Luisa's Beauty Studio. Mi pasión por la belleza y el cuidado personal comenzó desde muy joven, y he dedicado mi carrera a perfeccionar las técnicas que ofrezco a mis clientes.</p>
+                    <p>En mi salón, cada servicio es una experiencia personalizada. Utilizo solo productos de la más alta calidad y mis técnicas están constantemente actualizadas con las últimas tendencias en belleza y bienestar.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3 about-icon">
+                                    <i class="fas fa-check-circle fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Certificaciones</h5>
+                                    <p class="text-muted mb-0">Profesional certificada en múltiples técnicas de belleza.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3 about-icon">
+                                    <i class="fas fa-leaf fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Productos Naturales</h5>
+                                    <p class="text-muted mb-0">Ingredientes orgánicos y libres de crueldad animal.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3 about-icon">
+                                    <i class="fas fa-heart fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Atención Personalizada</h5>
+                                    <p class="text-muted mb-0">Cada cliente recibe un trato único y especial.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3 about-icon">
+                                    <i class="fas fa-medal fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Resultados Garantizados</h5>
+                                    <p class="text-muted mb-0">Comprometida con la satisfacción de mis clientes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Galeria -->
+<section id="gallery" class="py-5 bg-light">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h2 class="fs-1">Galería</h2>
+            <p class="text-muted">Momentos de belleza y transformación</p>
+        </div>
+        <div class="gallery-carousel">
+            <div class="gallery-track" id="galleryTrack">
+                <div class="gallery-slide">
+                    <img src="https://i.pinimg.com/736x/6a/bc/e3/6abce3a41ff6ea83e207671faa9ec915.jpg" alt="Tratamiento 1">
+                    <div class="gallery-overlay">
+                        <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#modal1">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="https://i.pinimg.com/736x/4c/8f/dc/4c8fdc9e8690e3ffcffeb3235c9311b2.jpg" alt="Tratamiento 2">
+                    <div class="gallery-overlay">
+                        <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#modal2">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="https://i.pinimg.com/736x/ae/15/f5/ae15f5599a35e1e53ff250ab8a717644.jpg" alt="Tratamiento 3">
+                    <div class="gallery-overlay">
+                        <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#modal3">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="https://i.pinimg.com/736x/48/f3/08/48f30854d2f6b9cd3de33df34299b420.jpg" alt="Tratamiento 4">
+                    <div class="gallery-overlay">
+                        <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#modal4">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="https://i.pinimg.com/736x/91/12/71/9112711261db4fc9ad7b76c4e8e7d18f.jpg" alt="Tratamiento 5">
+                    <div class="gallery-overlay">
+                        <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#modal5">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="https://i.pinimg.com/736x/9a/36/3f/9a363f389806becedef466c3386fe4db.jpg" alt="Tratamiento 6">
+                    <div class="gallery-overlay">
+                        <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#modal6">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="https://i.pinimg.com/736x/3b/b9/91/3bb991d7e6906389373d3ea2ae429ee1.jpg" alt="Tratamiento 7">
+                    <div class="gallery-overlay">
+                        <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#modal7">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="https://i.pinimg.com/736x/24/d0/ef/24d0ef5f8b1e3681340ccf80e2226a90.jpg" alt="Tratamiento 8">
+                    <div class="gallery-overlay">
+                        <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#modal8">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="https://i.pinimg.com/736x/aa/96/13/aa9613fdc17401cb437d3d70f016c814.jpg" alt="Tratamiento 9">
+                    <div class="gallery-overlay">
+                        <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#modal9">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="https://i.pinimg.com/736x/39/d3/1f/39d31f5e015a6d653943b9867d23633e.jpg" alt="Tratamiento 10">
+                    <div class="gallery-overlay">
+                        <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#modal10">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="https://i.pinimg.com/736x/0b/06/65/0b066545f2c07cfb8cef32aae1c3fd08.jpg" alt="Tratamiento 11">
+                    <div class="gallery-overlay">
+                        <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#modal11">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="https://i.pinimg.com/736x/e9/66/f1/e966f1a3508d15b4d2ddd3ca60741e4f.jpg" alt="Tratamiento 12">
+                    <div class="gallery-overlay">
+                        <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#modal12">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                <button class="gallery-nav gallery-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="gallery-nav gallery-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            <div class="gallery-dots" id="galleryDots"></div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <img src="https://i.pinimg.com/736x/6a/bc/e3/6abce3a41ff6ea83e207671faa9ec915.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <img src="https://i.pinimg.com/736x/4c/8f/dc/4c8fdc9e8690e3ffcffeb3235c9311b2.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <img src="https://i.pinimg.com/736x/ae/15/f5/ae15f5599a35e1e53ff250ab8a717644.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal4" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <img src="https://i.pinimg.com/736x/48/f3/08/48f30854d2f6b9cd3de33df34299b420.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal5" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <img src="https://i.pinimg.com/736x/91/12/71/9112711261db4fc9ad7b76c4e8e7d18f.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal6" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <img src="https://i.pinimg.com/736x/9a/36/3f/9a363f389806becedef466c3386fe4db.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal7" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <img src="https://i.pinimg.com/736x/3b/b9/91/3bb991d7e6906389373d3ea2ae429ee1.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal8" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <img src="https://i.pinimg.com/736x/24/d0/ef/24d0ef5f8b1e3681340ccf80e2226a90.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal9" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <img src="https://i.pinimg.com/736x/aa/96/13/aa9613fdc17401cb437d3d70f016c814.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal10" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <img src="https://i.pinimg.com/736x/39/d3/1f/39d31f5e015a6d653943b9867d23633e.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal11" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <img src="https://i.pinimg.com/736x/0b/06/65/0b066545f2c07cfb8cef32aae1c3fd08.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal12" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <img src="https://i.pinimg.com/736x/e9/66/f1/e966f1a3508d15b4d2ddd3ca60741e4f.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Contacto -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 class = "fs-1">Contacto</h2>
+                <p class="text-muted">Visítame o contáctame para una cita</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="fw-bold">Dirección</h3>
+                            <p>Alto de Las Acacias, Don Bosco Panamá</p>
+
+                            <a href="https://maps.app.goo.gl/toxL7UmZHCjUztFF6" 
+                            target="_blank" 
+                            class="btn btn-outline-custom mt-3">
+                                <i class="fas fa-map-marked-alt me-2"></i> Ver en Mapa
+                            </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3 class="fw-bold">Teléfono</h3>
+                        <p>+507 6370-5415</p>
+                        <a href="tel:+50763705415" class="btn btn-outline-custom mt-3">
+                            <i class="fas fa-phone me-2"></i>Llamar Ahora
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="fw-bold">Email</h3>
+                        <p>luisaf.beauty.studio@gmail.com</p>
+                        <a href="mailto:luisaf.beauty.studio@gmail.com" class="btn btn-outline-custom mt-3">
+                            <i class="fas fa-paper-plane me-2"></i>Enviar Email
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="fw-bold">Horario</h3>
+                        <div class="schedule-item">
+                            <span class="schedule-day">Lunes</span>
+                            <span>09:00 - 19:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-day">Martes</span>
+                            <span>09:00 - 19:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-day">Miércoles</span>
+                            <span>09:00 - 19:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-day">Jueves</span>
+                            <span>09:00 - 19:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-day">Viernes</span>
+                            <span>09:00 - 19:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-day">Sábado</span>
+                            <span>09:00 - 19:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-day">Domingo</span>
+                            <span>Cerrado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="contact-info">
+                        <h4 class="mb-4 fw-bold">Envíame un mensaje</h4>
+                        <form id="contactForm" action="https://formsubmit.co/luisaf.beauty.studio@gmail.com" method="POST">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" name="name" placeholder="Nombre" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="subject" placeholder="Asunto" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" name="message" placeholder="Mensaje" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-beauty">
+                                <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Mapa -->
+        <div class="map-section" data-aos="fade-up">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.1661068116055!2d-79.4201319!3d9.048608500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fab5560d60b7257%3A0xfabcd582cc8f33f8!2sLuisa%20Beauty%20Studio!5e0!3m2!1ses-419!2spa!4v1743530921860!5m2!1ses-419!2spa" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+            <section class="py-5 newsletter-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-3 mb-lg-0" data-aos="fade-right">
+                        <h3 class="mb-0 text-white fw-bold">Suscríbete a mi boletín</h3>
+                        <p class="mb-0">Recibe promociones exclusivas y consejos de belleza.</p>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <form class="d-flex">
+                            <input type="email" class="form-control me-2" placeholder="Tu email" required>
+                            <button type="submit" class="btn btn-light">Suscribirse</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <a href="#" class="footer-logo">Luisa's Beauty Studio</a>
+                    <p class="mt-3">Transformando tu belleza con servicios profesionales y personalizados.</p>
+                    <div class="mt-4">
+                        <a href="https://www.tiktok.com/@luisa.beauty.stud?_t=8n7ipz5Sb3d&_r=1" target="_blank" class="text-white me-3">
+                            <i class="fab fa-tiktok fa-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/luisabeautystudio/?igsh=eXQxeTV2MmV3eDJh" target="_blank" class="text-white me-3">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B50763705415&text=%C2%A1Hola%21+vi+tu+p%C3%A1gina+de+AgendaPro+y+me+gustar%C3%ADa+resolver+algunas+dudas&type=phone_number&app_absent=0" target="_blank" class="text-white me-3">
+                            <i class="fab fa-whatsapp fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-white">Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#services" class="footer-link">Spa</a></li>
+                        <li class="mb-2"><a href="#services" class="footer-link">Pestañas</a></li>
+                        <li class="mb-2"><a href="#services" class="footer-link">Maquillaje</a></li>
+                        <li class="mb-2"><a href="#services" class="footer-link">Depilación</a></li>
+                        <li><a href="#services" class="footer-link">Cabello</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-white">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="footer-link">Inicio</a></li>
+                        <li class="mb-2"><a href="#services" class="footer-link">Servicios</a></li>
+                        <li class="mb-2"><a href="#about" class="footer-link">Sobre Mí</a></li>
+                        <li class="mb-2"><a href="#gallery" class="footer-link">Galería</a></li>
+                        <li><a href="#contact" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-white">Horario</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Lunes - Viernes: 9am - 7pm</li>
+                        <li class="mb-2">Sábado: 9am - 3pm</li>
+                        <li>Domingo: Cerrado</li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="https://link.agendapro.com/pa/salondebellezadeluisataborda/c6fb25a6" target="_blank" class="btn btn-outline-light">
+                            <i class="fas fa-calendar-alt me-2"></i>Reservar Cita
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="mt-5 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Luisa's Beauty Studio. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Diseñado con <i class="fas fa-heart text-danger"></i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Reserva tu cita</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Para reservar tu cita, haz clic en el siguiente botón:</p>
+                    <a href="https://link.agendapro.com/pa/salondebellezadeluisataborda/c6fb25a6" target="_blank" class="btn btn-beauty">
+                        <i class="fas fa-calendar-alt me-2"></i>Reservar en AgendaPro
+                    </a>
+                    <p class="mt-3">O contáctame directamente:</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="https://api.whatsapp.com/send/?phone=%2B50763705415&text=%C2%A1Hola%21+vi+tu+p%C3%A1gina+de+AgendaPro+y+me+gustar%C3%ADa+resolver+algunas+dudas&type=phone_number&app_absent=0" class="btn btn-outline-primary">
+                            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                        
+                        </a>
+                        <a href="tel:+50763705415" class="btn btn-outline-primary">
+                            <i class="fas fa-phone-alt me-2"></i>Llamar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="galleryModal1" tabindex="-1" aria-labelledby="galleryModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" class="img-fluid" alt="Galería 1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="galleryModal2" tabindex="-1" aria-labelledby="galleryModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" class="img-fluid" alt="Galería 2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="galleryModal3" tabindex="-1" aria-labelledby="galleryModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://beaestilista.com.uy/wp-content/uploads/2020/10/lifting_cejas_bea_estilista.jpg" class="img-fluid" alt="Galería 3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="galleryModal4" tabindex="-1" aria-labelledby="galleryModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://images.unsplash.com/photo-1596704017254-9757e8d1ff2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" class="img-fluid" alt="Galería 4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="galleryModal5" tabindex="-1" aria-labelledby="galleryModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid" alt="Galería 5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="galleryModal6" tabindex="-1" aria-labelledby="galleryModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid" alt="Galería 6">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Manual de Usuario -->
+    <div class="modal fade" id="manualModal" tabindex="-1" aria-labelledby="manualModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="manualModalLabel">📘 Manual de Usuario - Luisa's Beauty Studio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-4">
+                        <h4 class="fw-bold mb-3">¡Bienvenido(a) a nuestra página web! 👋</h4>
+                        <p class="text-muted">Sigue esta guía paso a paso para aprovechar al máximo todos nuestros servicios:</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">1. Navegación Principal 🧭</h5>
+                        <div class="step">
+                            <div class="step-content">
+                                <h6>Menú Superior:</h6>
+                                <ul>
+                                    <li><strong>Inicio:</strong> Lleva a la portada principal con nuestra imagen destacada</li>
+                                    <li><strong>Servicios:</strong> Explora todos los tratamientos disponibles usando las pestañas</li>
+                                    <li><strong>Sobre Mí:</strong> Conoce mi experiencia y filosofía de trabajo</li>
+                                    <li><strong>Galería:</strong> Visualiza antes/después de trabajos realizados</li>
+                                    <li><strong>Contacto:</strong> Encuentra ubicación, horarios y formulario</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">2. Reserva de Citas 🗓️</h5>
+                        <div class="step">
+                            <div class="step-content">
+                                <h6>Paso a paso para reservar:</h6>
+                                <ol>
+                                    <li>Dirígete a <strong>Servicios</strong> en el menú</li>
+                                    <li>Selecciona la categoría deseada (Ej: "Pestañas")</li>
+                                    <li>Haz clic en el servicio específico para ver detalles</li>
+                                    <li>Presiona el botón <button class="btn btn-sm btn-primary">Reservar</button></li>
+                                    <li>En el modal que aparece:
+                                        <ul>
+                                            <li>Reserva directa en AgendaPro (plataforma externa)</li>
+                                            <li>O contacta por WhatsApp/llamada para coordinar</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <div class="alert alert-info">
+                                    💡 Consejo: Puedes reservar directamente desde cualquier servicio usando el botón flotante <button class="btn btn-sm btn-primary"><i class="fas fa-calendar-alt"></i> Reservar</button> en la esquina superior derecha
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">3. Exploración de Servicios 💅</h5>
+                        <div class="step">
+                            <div class="step-content">
+                                <h6>Cómo encontrar tratamientos:</h6>
+                                <ol>
+                                    <li>En la sección <strong>Servicios</strong>, usa las pestañas horizontales para filtrar por categoría</li>
+                                    <li>Cada servicio muestra:
+                                        <ul>
+                                            <li>💰 Precio destacado</li>
+                                            <li>⏱️ Duración estimada</li>
+                                            <li>📝 Descripción detallada</li>
+                                            <li>🖼️ Imágenes de referencia</li>
+                                        </ul>
+                                    </li>
+                                    <li>Usa el buscador (si está disponible) para encontrar servicios específicos</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">4. Contacto y Ubicación 📍</h5>
+                        <div class="step">
+                            <div class="step-content">
+                                <h6>Múltiples formas de contacto:</h6>
+                                <ul>
+                                    <li><strong>Formulario de contacto:</strong>
+                                        <ol>
+                                            <li>Completa todos los campos obligatorios (marcados con *)</li>
+                                            <li>Verifica tu email antes de enviar</li>
+                                            <li>Recibirás respuesta en 24-48 horas hábiles</li>
+                                        </ol>
+                                    </li>
+                                    <li><strong>Datos directos:</strong>
+                                        <ul>
+                                            <li>📞 Llamada rápida: Haz clic en el número telefónico</li>
+                                            <li>📱 WhatsApp: Usa el botón flotante verde</li>
+                                            <li>🗺️ Mapa interactivo: Amplía con el botón "+" para mejor visualización</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">5. Galería Visual 📸</h5>
+                        <div class="step">
+                            <div class="step-content">
+                                <h6>Cómo navegar la galería:</h6>
+                                <ul>
+                                    <li>Usa las flechas <i class="fas fa-chevron-left"></i> <i class="fas fa-chevron-right"></i> para cambiar imágenes</li>
+                                    <li>Haz clic en cualquier imagen para ampliarla</li>
+                                    <li>En vista móvil: Desliza horizontalmente para ver más imágenes</li>
+                                    <li>Los puntos inferiores indican posición en el carrusel</li>
+                                </ul>
+                                <div class="alert alert-warning">
+                                    ⚠️ Nota: Algunas imágenes pueden variar según disponibilidad de productos/tendencias
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">6. Funciones Adicionales ✨</h5>
+                        <div class="step">
+                            <div class="step-content">
+                                <h6>Otras herramientas útiles:</h6>
+                                <ul>
+                                    <li><strong>Newsletter:</strong>
+                                        <ol>
+                                            <li>Desplázate al final de la página</li>
+                                            <li>Ingresa tu email en el campo designado</li>
+                                            <li>Recibirás promociones exclusivas mensuales</li>
+                                        </ol>
+                                    </li>
+                                    <li><strong>Redes Sociales:</strong>
+                                        <ul>
+                                            <li>Encuéntranos en Instagram y TikTok usando los íconos del footer</li>
+                                            <li>Etiquétanos (@luisabeautystudio) en tus publicaciones</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Botón "Volver arriba"</strong> en esquina inferior derecha para navegación rápida</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-success mt-4">
+                        <h5 class="fw-bold">🆘 Soporte Técnico</h5>
+                        <p>Si encuentras cualquier problema:</p>
+                        <ul>
+                            <li>📧 Email técnico: soporte@luisabeauty.com</li>
+                            <li>📞 Teléfono emergencias: +507 6370-5415 (9am - 5pm)</li>
+                            <li>Actualiza tu navegador a la última versión</li>
+                            <li>Limpia la caché del navegador si ves contenido desactualizado</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
